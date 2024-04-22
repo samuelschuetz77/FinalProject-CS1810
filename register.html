@@ -10,13 +10,51 @@
     <header>
         <h1>Mountain West Intercollegiate Chess Tournament 2024 </h1>
         <div class="navlinks">
-            <a href="">Home</a>
+            <a href="index.html">Home</a>
             <a href="">Register Here</a>
-            <a href="">Tournament Standings</a>
+            <a href="standings.html">Tournament Standings</a>
             <a href="">Donate Here</a>
-            
         </div>
     </header>
+    <section id="registration">
+        <h2>Registration</h2>
     
+        <h3>Individual Section Registration</h3>
+        <form id="individual-form">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required> 
+    
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+    
+            <label for="college">College/University:</label>
+            <input type="text" id="college" name="college" required>
+    
+            <label for="rating">Approximate Online Chess Rating (chess.com/lichess):</label>
+            <input type="number" id="rating" name="rating"> 
+    
+            <fieldset>
+                <legend>Half-Point Bye Request</legend>
+                <label for="need-bye">Do you need/want a half-point bye?</label>
+                <input type="radio" id="need-bye-yes" name="need-bye" value="yes">
+                <label for="need-bye-yes">Yes</label>
+                <input type="radio" id="need-bye-no" name="need-bye" value="no" checked> 
+                <label for="need-bye-no">No</label>
+    
+                <div id="bye-round-options" style="display:none;"> 
+                    <p>Select the round you would like the bye:</p>
+                    <label for="bye-round-1"><input type="radio" id="bye-round-1" name="bye-round" value="1"> Round 1</label>
+                    <label for="bye-round-2"><input type="radio" id="bye-round-2" name="bye-round" value="2"> Round 2</label>
+                    <label for="bye-round-3"><input type="radio" id="bye-round-3" name="bye-round" value="3"> Round 3</label>
+                    <label for="bye-round-4"><input type="radio" id="bye-round-4" name="bye-round" value="3"> Round 4</label>
+                    </div>
+           </fieldset>
+    
+            <button type="submit">Register</button>
+        </form>
+    </section>
+    
+    
+    <script src="register-ui.js"></script>
 </body>
 </html>
