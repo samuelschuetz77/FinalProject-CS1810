@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "XQw2Ve++i16nuJ3/v+1XinQwCDTJc4nlX10ULJGpNY5zAiwI3N24xoavZ20cqjq37NpnxZv2OzGyRKuGSspBYA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\samue\\Desktop\\1810 Final P\\FinalProject-CS1810\\ChessTournamentApi\\ChessTournamentApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\samue\\.nuget\\packages\\microsoft.dotnet.ilcompiler\\8.0.0\\microsoft.dotnet.ilcompiler.8.0.0.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.4\\microsoft.net.illink.tasks.8.0.4.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\microsoft.typescript.msbuild\\5.4.4\\microsoft.typescript.msbuild.5.4.4.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\mysqlconnector\\2.3.7\\mysqlconnector.2.3.7.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\8.0.0\\runtime.win-x64.microsoft.dotnet.ilcompiler.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

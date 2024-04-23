@@ -1,8 +1,63 @@
+:root{
+    --color4: rgb(39, 55, 77);
+    --color3: rgb(82, 109, 130);
+    --color2: rgb(157, 178, 191);
+    --color1: rgb(111, 200, 200);
+    --color0: rgb(228, 250, 255);
+    --color0-0: rgb(254, 251, 251);
+    --color-1: rgb(167, 251, 230);
+
+}
+body{
+    margin: 0%;
+}
+
 header {
-    height: 7em;
-    border-color:lightblue;
+    height: 15em;
+    border-color:var(--color4);
     border-style: solid;
-    background-color:lightblue;
+    background-color: var(--color4);
+}
+.titleLogo{
+    display: flex;
+    
+}
+.snowLogo{
+    height: 10em;
+    margin-left:1%;
+    margin-top: 1%;
+}
+header h1{
+    margin-left: 3%;
+    color: pink;
+}
+.navlinks{
+    background-color: var(--color0-0);
+    height: 10em;
+}
+.navlinks ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    margin-left: 10em;
+    margin-top: 4px;
+}
+
+.navlinks li {
+    display: inline; 
+    margin-right: 30px; 
+
+}
+.navlinks a{
+    text-decoration: none;
+    color: var(--color4);
+  
+    font-size: 18px;
+   
+    background-color: var(--color0-0);
+    font-weight: 800;
+    padding:0;
+
 }
 .modal {
     display: none; 

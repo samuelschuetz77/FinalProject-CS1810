@@ -1,0 +1,11 @@
+@ChessTournamentApi_HostAddress = http://localhost:5227
+
+GET {{ChessTournamentApi_HostAddress}}/todos/
+Accept: application/json
+
+###
+
+GET {{ChessTournamentApi_HostAddress}}/todos/1
+Accept: application/json
+
+###
