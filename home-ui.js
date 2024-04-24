@@ -1,18 +1,15 @@
+import { GetLoginCredentials, AuthenticateUser } from './home-svc.js';
+
+
 // Get elements
 const registerButton = document.getElementById('register-button'); // Assuming you have a link to registration
 const loginModal = document.getElementById('login-modal');
 
-// Function to check login status (you'll need backend support for this)
-function isLoggedIn() {
-    // Placeholder - Replace with a call to your backend API
-    return localStorage.getItem('isLoggedIn') === 'true'; 
-}
+var IsLoggedIn = false;
 
-// Function to open the login modal
 function showLoginModal() {
     loginModal.style.display = 'block';
 }
-
 // Show modal when the registration link is clicked
 registerButton.addEventListener('click', () => {
     if (isLoggedIn()){
@@ -23,23 +20,29 @@ registerButton.addEventListener('click', () => {
     }
 });
 
+function checkForLoginRedirect() { 
+    const urlParams = new URLSearchParams(window.location.search); // Get query params
+    const showLogin = urlParams.get('showLogin');
+
+    if (showLogin === 'true') {
+        showLoginModal();
+    }
+}
+
 // // Close modal when the close button is clicked
 // closeBtn.addEventListener('click', () => {
 //     loginModal.style.display = 'none';
 //     window.location.href = 'index.html'
 // });
 
+const loginForm = document.getElementById('login-form');
+
+loginForm.addEventListener('submit', async (event) => {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value; ///// 4/24 4:58 pm ////////////////////////////////////////////////////// 
 
 
-// Logic inside your login form submit handler:
-function handleLoginSubmit(event) {
-    event.preventDefault();
-    // ... Send login data to backend ...
- 
-    if (loginSuccessful) { // Replace with your backend success check
-        loginModal.style.display = 'none';
-        window.location.href = '/registration'; // Redirect to registration
-    } else {
-        // ... Handle login failure ... 
-    }
- }
+});
+
+
+ checkForLoginRedirect();

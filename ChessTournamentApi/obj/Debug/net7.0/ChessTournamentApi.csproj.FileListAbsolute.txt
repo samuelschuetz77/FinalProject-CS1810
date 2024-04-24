@@ -1,7 +1,0 @@
-C:\Users\samue\Desktop\1810 Final P\FinalProject-CS1810\ChessTournamentApi\obj\Debug\net7.0\ChessTournamentApi.csproj.AssemblyReference.cache
-C:\Users\samue\Desktop\1810 Final P\FinalProject-CS1810\ChessTournamentApi\obj\Debug\net7.0\ChessTournamentApi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\samue\Desktop\1810 Final P\FinalProject-CS1810\ChessTournamentApi\obj\Debug\net7.0\ChessTournamentApi.AssemblyInfoInputs.cache
-C:\Users\samue\Desktop\1810 Final P\FinalProject-CS1810\ChessTournamentApi\obj\Debug\net7.0\ChessTournamentApi.AssemblyInfo.cs
-C:\Users\samue\Desktop\1810 Final P\FinalProject-CS1810\ChessTournamentApi\obj\Debug\net7.0\ChessTournamentApi.csproj.CoreCompileInputs.cache
-C:\Users\samue\Desktop\1810 Final P\FinalProject-CS1810\ChessTournamentApi\obj\Debug\net7.0\ChessTournamentApi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\samue\Desktop\1810 Final P\FinalProject-CS1810\ChessTournamentApi\obj\Debug\net7.0\ChessTournamentApi.sourcelink.json

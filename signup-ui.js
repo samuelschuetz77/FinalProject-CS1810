@@ -1,30 +1,51 @@
-const signupForm = document.getElementById('signup-form');
+import { GetCredentials, PostCredentials } from "./signup-svc.js";
 
-signupForm.addEventListener('submit', (event) => {
-    event.preventDefault(); 
 
-    const email = document.getElementById('email').value;
-    const confirmEmail = document.getElementById('confirm-email').value;
-    const password = document.getElementById('password').value;
-    const confirmPassword = document.getElementById('confirm-password').value;
+export async function LogCredentials() {
+    var CredentialArray = await GetCredentials(); // Log Credentials to confirm persistance
 
-    let isValid = true; // Assume valid initially
+    CredentialArray.forEach( (UserCreds) => {
+        console.log(UserCreds);
+    })
+}
 
-    // Check if emails match
-    if (email !== confirmEmail) {
-        alert("Emails don't match!"); // Change to a better error display later
-        isValid = false;
-    }
+export function RegisterUser(){
+    const signupForm = document.getElementById('signup-form');
+    signupForm.addEventListener('submit', async (event) => {
+        event.preventDefault(); 
+        const email = document.getElementById('email').value;
+        console.log("Email entered:", email); // Add this line for debugging
+        const confirmEmail = document.getElementById('confirm-email').value;
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirm-password').value;
+        let isValid = true;
+        if (email !== confirmEmail) {
+            alert("Emails don't match!"); 
+            isValid = false;
+        }
+        if (password !== confirmPassword) {
+            alert("Passwords don't match!");
+            isValid = false;
+        }
+        const emailExists = await CheckEmailExists(email);
+        if (emailExists) {
+            alert("Email is already associated with an account. Please use a different email address.");
+            return; 
+        }
+        if (isValid) {
+             await PostCredentials(email, password);
+             //alert("Successfully Created Your Account!");
+             window.location.href = 'http://127.0.0.1:5501?showLogin=true'; // Redirect to Login modal with query param
+        }
+    });
 
-    // Check if passwords match
-    if (password !== confirmPassword) {
-        alert("Passwords don't match!");
-        isValid = false;
-    }
+}  
 
-    // If everything is valid, simulate form submission for your demo
-    if (isValid) {
-        alert("Success! Account would be created."); 
-        // When you have a backend, you'd send the data here
-    }
-});
+async function CheckEmailExists(email) {
+    const CredentialArray = await GetCredentials();
+    return CredentialArray.some(userCreds => userCreds.email === email);
+}
+
+LogCredentials();
+
+RegisterUser();
