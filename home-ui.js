@@ -15,7 +15,7 @@ function showLoginModal() {
 }
 // Show modal when the registration link is clicked
 registerButton.addEventListener('click', () => {
-    if (Loggedin){
+    if (isLoggedIn()){
         window.location.href = 'register.html';    
     }
     else {
