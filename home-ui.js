@@ -2,17 +2,20 @@ import { GetLoginCredentials, AuthenticateUser } from './home-svc.js';
 
 
 // Get elements
-const registerButton = document.getElementById('register-button'); // Assuming you have a link to registration
+const registerButton = document.getElementById('register-button'); //
 const loginModal = document.getElementById('login-modal');
+let Loggedin = false; 
 
-var IsLoggedIn = false;
+function isLoggedIn(){
+    return Loggedin; 
+};
 
 function showLoginModal() {
     loginModal.style.display = 'block';
 }
 // Show modal when the registration link is clicked
 registerButton.addEventListener('click', () => {
-    if (isLoggedIn()){
+    if (Loggedin){
         window.location.href = 'register.html';    
     }
     else {
@@ -38,10 +41,20 @@ function checkForLoginRedirect() {
 const loginForm = document.getElementById('login-form');
 
 loginForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value; ///// 4/24 4:58 pm ////////////////////////////////////////////////////// 
-
-
+    const loginSuccessful = await AuthenticateUser(email, password);
+    console.log(AuthenticateUser);
+    if (loginSuccessful){
+        Loggedin= true;
+        console.log("login successful");
+        alert("Log in successful");
+        window.location.href='/register.html';
+    }
+    else{
+        console.log(AuthenticateUser);
+    }
 });
 
 
