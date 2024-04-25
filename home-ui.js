@@ -49,8 +49,8 @@ loginForm.addEventListener('submit', async (event) => {
     if (loginSuccessful){
         Loggedin= true;
         console.log("login successful");
-        alert("Log in successful");
-        window.location.href='/register.html';
+        //alert("Log in successful");
+        window.location.href='register.html';
     }
     else{
         console.log(AuthenticateUser);
