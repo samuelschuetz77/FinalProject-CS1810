@@ -43,6 +43,10 @@ export function RegisterUser(){
 
 async function CheckEmailExists(email) {
     const CredentialArray = await GetCredentials();
+    if (CredentialArray = null){
+        console.log("heres the array: " ,CredentialArray);
+        return false;
+    }
     return CredentialArray.some(userCreds => userCreds.email === email);
 }
 
