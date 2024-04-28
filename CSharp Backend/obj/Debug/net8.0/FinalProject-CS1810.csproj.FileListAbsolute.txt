@@ -25,3 +25,31 @@ C:\Users\samue\Desktop\1810 Final P\FinalProject-CS1810\CSharp Backend\obj\Debug
 C:\Users\samue\Desktop\1810 Final P\FinalProject-CS1810\CSharp Backend\obj\Debug\net8.0\FinalProject-CS1810.genruntimeconfig.cache
 C:\Users\samue\Desktop\1810 Final P\FinalProject-CS1810\CSharp Backend\obj\Debug\net8.0\ref\FinalProject-CS1810.dll
 C:\Users\samue\Desktop\1810 Final P\FinalProject-CS1810\CSharp Backend\bin\Debug\net8.0\UserCredentials.json
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\bin\Debug\net8.0\appsettings.json
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\bin\Debug\net8.0\UserCredentials.json
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\bin\Debug\net8.0\FinalProject-CS1810.exe
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\bin\Debug\net8.0\FinalProject-CS1810.deps.json
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\bin\Debug\net8.0\FinalProject-CS1810.runtimeconfig.json
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\bin\Debug\net8.0\FinalProject-CS1810.dll
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\bin\Debug\net8.0\FinalProject-CS1810.pdb
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\FinalProject-CS1810.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\FinalProject-CS1810.AssemblyInfoInputs.cache
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\FinalProject-CS1810.AssemblyInfo.cs
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\FinalProject-CS1810.csproj.CoreCompileInputs.cache
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\FinalProject-CS1810.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\FinalProject-CS1810.sourcelink.json
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\staticwebassets\msbuild.FinalProject-CS1810.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\staticwebassets\msbuild.build.FinalProject-CS1810.props
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FinalProject-CS1810.props
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FinalProject-CS1810.props
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\scopedcss\bundle\FinalProject-CS1810.styles.css
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\FinalProject-CS1810.dll
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\refint\FinalProject-CS1810.dll
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\FinalProject-CS1810.pdb
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\FinalProject-CS1810.genruntimeconfig.cache
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\obj\Debug\net8.0\ref\FinalProject-CS1810.dll
+C:\Users\samue\Desktop\WednesdayWebDev\FinalProject-CS1810-5a20e6972fc60f781a79e0c97d92636f71b4b88f\CSharp Backend\bin\Debug\net8.0\PlayersRegistered.json

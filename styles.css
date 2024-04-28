@@ -1,22 +1,37 @@
 :root{
+    /*From ColorHunt*/
+    --color5: rgb(6, 43, 228);
     --color4: rgb(39, 55, 77);
     --color3: rgb(82, 109, 130);
     --color2: rgb(157, 178, 191);
+
+    /*Additional*/
     --color1: rgb(111, 200, 200);
     --color0: rgb(228, 250, 255);
     --color0-0: rgb(254, 251, 251);
     --color-1: rgb(167, 251, 230);
-
+    --snoworange: rgb(235, 114, 4);
+    --snoworangeA: rgb(236, 191, 148);
+    --color4A: rgb(201, 214, 231);
+    --color330: rgba(19, 202, 71, 0.738);
+    --green1: rgb(19, 160, 71);
+    --green2:  #00f40c;
+    --oddpurple: rgba(102, 51, 153, 0.7);
+    --modalbackground: rgba(0, 0, 0, 0.5);
 }
 body{
     margin: 0%;
+    background-color: var(--color0-0);
 }
 
 header {
-    height: 15em;
-    border-color:var(--color4);
-    border-style: solid;
-    background-color: var(--color4);
+    height: 12em;
+    background: linear-gradient(100deg, 
+    var(--color4) 30%,     
+    var(--color3) 80%
+);
+
+
 }
 .titleLogo{
     display: flex;
@@ -29,36 +44,73 @@ header {
 }
 header h1{
     margin-left: 3%;
-    color: pink;
+    margin-top: 5.3%;
+    font-size: 42px;
+    color: var(--color0-0);
+    text-shadow: 
+        0.7px 0.7px 0 var(--snoworange),  
+        1.5px 1.5px 0 var(--oddpurple),    
+        1.2px 1.2px 0 var(--color3);   
+
 }
+
 .navlinks{
     background-color: var(--color0-0);
-    height: 10em;
+    height: 2.3em;
+    border-top-style: solid;
+    border-top-width: 0.243em;
+    border-color: var(--snoworange);
+  
+    padding-bottom: 1em;
+   
+    margin-bottom: 2em;
 }
 .navlinks ul {
     list-style: none; 
     padding: 0;
     margin: 0;
-    margin-left: 10em;
-    margin-top: 4px;
+    margin-left: 5em;
+    margin-top: 0.04em;
 }
 
 .navlinks li {
     display: inline; 
-    margin-right: 30px; 
+    margin-right: 45px; 
 
 }
 .navlinks a{
     text-decoration: none;
-    color: var(--color4);
-  
+    color: var(--color3);
     font-size: 18px;
-   
     background-color: var(--color0-0);
     font-weight: 800;
     padding:0;
-
+    transition: 1 ease-in;
 }
+.navlinks a:hover{
+    border-bottom-style:solid;
+    border-bottom-color:var(--snoworange);
+}
+#register-button {
+    font-weight: 800;
+    border-style: solid;
+    border-color: var(--color4);
+    background-color: var(--color330);
+    border-radius: .7em;
+    padding: 0.46em;
+    transition: transform 0.5s ease; 
+}
+
+#register-button:hover {
+    animation: hover-effect 0.6s linear infinite; 
+}
+
+@keyframes hover-effect {
+    0% {transform: rotate(-3deg) scale(1);}
+    50% {transform: rotate(3deg) scale(1.25); }
+    100% {transform: rotate(-3deg) scale(1);}
+}
+
 .modal {
     display: none; 
     position: fixed; 
@@ -66,18 +118,167 @@ header h1{
     left: 0;
     width: 100%; 
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: var(--modalbackground); 
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color:var(--color0-0);
     margin: 15% auto; 
-    padding: 20px;
-    width: 30%; 
+    padding: 40px;
+    width: 30%;
+    border-radius: 3em;
 }
 
-.close-btn {
+#login-form label {
+    margin-bottom: 5px;
+}
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color2);
+    border-radius: 4px;
+}
+
+#login-form button[type="submit"] {
+    background-color: var(--green1); 
+    color: var(--color0-0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    border-bottom-style: ridge;
+    border-bottom-width: 0.3em;
+    border-bottom-color: var(--green1);
+}
+
+#login-form button[type="submit"]:hover {
+    
+    border-bottom-color: var(--green2); 
+}
+
+.signup {
+    
+    color: var(--color5); 
+}
+
+#close-btn {
     float: right;
     font-size: 24px;
     cursor: pointer;
 }
+#login-form{
+    display: flex;
+    flex-direction: column;
+}
+.mainbox{
+    margin-top: 45px;
+    background: linear-gradient(100deg, var(--color4) 30%, var(--color3) 80%);
+    
+
+}
+
+.CheckInTitle{
+    margin-top: 0.25em;
+    text-align: center;
+    font-size: 27px;
+    color: var(--color0-0)
+}
+
+#playerpool{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background: linear-gradient(100deg, var(--color4) 30%, var(--color3) 80%);
+    height: 100%;
+}
+#playerpool h3{
+    color: var(--color4);
+    margin-left: 40em;
+    margin: 20px;
+}
+
+
+.ppCard {
+    display:flex;
+    flex-direction: row;
+    width: calc(65%); 
+    background-color: var(--color1);
+    border: 1px solid var(--color2);
+    border-radius: 1em;
+    padding: 0em;
+    box-sizing: border-box;
+    margin-left: 18%;
+}
+
+.ppCard:nth-child(even) {
+    background-color: var(--snoworangeA); 
+}
+
+
+.ppCard:nth-child(odd) {
+    background-color: var(--color4A); 
+}
+
+.ppCard p{
+    margin-left: 1em;;
+    padding: 0;
+
+}
+.nameoncard{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.playerpoolhead{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    justify-content: center;
+
+}
+.playerpoolhead label{
+    margin-right: 3em;
+    font-size: 16px;
+    color: var(--color0-0);
+}
+ .content{
+    background-color: var(--color0-0);
+    text-align: center;
+   
+} 
+
+ .about h3{
+    margin-left:5%;
+    color: var(--color4);
+}
+.content h2{
+    text-align: center;
+}
+.hunt{
+    width:30em;
+}
+.content p {
+    text-align: center;
+}
+.huntsman{
+    
+    margin: 0 auto; 
+    width: 40%; 
+    padding: 10px; 
+    border: 0.2em solid var(--snoworange); 
+    border-radius: 0.45em;
+    
+}
+
+.four{
+    list-style-type: none;
+}
+  
+  
+
+
+

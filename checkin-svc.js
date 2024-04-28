@@ -1,8 +1,8 @@
-export async function GetLoginCredentials() 
+export async function GetPlayersInfo() 
 {
-    var CredResult = null;
+    var PlayerInfoPull = null;
     
-    await fetch("http://localhost:5147/usercredentials")
+    await fetch("http://localhost:5147/registeredplayers")
         .then(response => {
             if (response.status < 200 || response.status >= 300) {
                 throw new Error("Invalid request, server error code!");
@@ -10,8 +10,8 @@ export async function GetLoginCredentials()
             return response.json();
         })
         .then((responseData) => {
-            CredResult = responseData;
-            console.log(CredResult);
+            PlayerInfoPull = responseData;
+            console.log(PlayerInfoPull);
         })
         .catch(e => {
             var exmsg = "";
@@ -20,9 +20,5 @@ export async function GetLoginCredentials()
             console.log(exmsg);
         });
 
-    return CredResult;
-}
-export async function AuthenticateUser(email, password){
-    const userCreds = await GetLoginCredentials();
-    return userCreds.some(cred => cred.email === email && cred.password === password)
+    return PlayerInfoPull;
 }

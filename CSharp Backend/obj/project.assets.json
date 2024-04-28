@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samue\\Desktop\\1810 Final P\\FinalProject-CS1810\\CSharp Backend\\FinalProject-CS1810.csproj",
+      "projectUniqueName": "C:\\Users\\samue\\Desktop\\WednesdayWebDev\\FinalProject-CS1810\\CSharp Backend\\FinalProject-CS1810.csproj",
       "projectName": "FinalProject-CS1810",
-      "projectPath": "C:\\Users\\samue\\Desktop\\1810 Final P\\FinalProject-CS1810\\CSharp Backend\\FinalProject-CS1810.csproj",
+      "projectPath": "C:\\Users\\samue\\Desktop\\WednesdayWebDev\\FinalProject-CS1810\\CSharp Backend\\FinalProject-CS1810.csproj",
       "packagesPath": "C:\\Users\\samue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samue\\Desktop\\1810 Final P\\FinalProject-CS1810\\CSharp Backend\\obj\\",
+      "outputPath": "C:\\Users\\samue\\Desktop\\WednesdayWebDev\\FinalProject-CS1810\\CSharp Backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

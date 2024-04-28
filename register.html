@@ -5,31 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Chess Registration</title>
+    <script type="module" src="register-ui.js"></script>
 </head>
 <body>
     <header>
-        <h1>Mountain West Intercollegiate Chess Tournament 2024 </h1>
-        <div class="navlinks">
-            <a href="index.html">Home</a>
-            <a href="">Register Here</a>
-            <a href="standings.html">Tournament Standings</a>
-            <a href="">Donate Here</a>
+        <div class="titleLogo">
+            <img class="snowLogo" src="SCC.jpg" alt="Snow College Chess Club Logo">
+            <h1>Mountain West Intercollegiate Chess Tournament 2024</h1>
         </div>
+        <nav class="navlinks">
+            <ul>
+                <li><button id="register-button">Register</button></li>
+                <li><a href="donate.html">Donate Here</a></li>
+                <li><a href="checkin.html">Who Will Be There</a></li>
+                
+            </ul>
+        </nav>
     </header>
     <section id="registration">
         <h2>Registration</h2>
     
-        <h3>Individual Section Registration</h3>
-        <form id="individual-form">
+        
+        <form id="reg-form">
             <label for="fname">First Name:</label>
             <input type="text" id="fname" name="fname" required> 
-    
+            
             <label for="lname">Last Name:</label>
             <input type="text" id="lname" name="lname" required>
-    
+            
             <label for="college">College/University:</label>
-            <input type="text" id="college" name="college" required>
-    
+            <select id="college" name="college" required>
+                <option value="" disabled selected>Select Your College</option> 
+                <option value="Southern Utah University">Southern Utah University</option>
+                <option value="University of Utah">University of Utah</option>
+                <option value="Utah State University">Utah State University</option>
+                <option value="Weber State University">Weber State University</option>
+                <option value="Utah Valley University">Utah Valley University</option>
+                <option value="Utah Tech University">Utah Tech University</option>
+                <option value="Brigham Young University">Brigham Young University</option>
+                <option value="Westminster College">Westminster College</option>
+                <option value="Snow College">Snow College</option>
+                <option value="Bridgerland Technical College">Bridgerland Technical College</option>
+                <option value="Davis Technical College">Davis Technical College</option>
+                <option value="Mountainland Technical College">Mountainland Technical College</option>
+                <option value="Ogden-Weber Technical College">Ogden-Weber Technical College</option>
+                <option value="Southwest Technical College">Southwest Technical College</option>
+                <option value="Tooele Technical College">Tooele Technical College</option>
+                <option value="Uintah Basin Technical College">Uintah Basin Technical College</option>
+                <option value="Salt Lake Community College">Salt Lake Community College</option>
+            </select>
+            <fieldset>
+                <legend>Individual/3 Player Team</legend>
+                <label for="ToI">Which section would you like to play in?</label>
+                <input type="radio" id="team" name="ToI" value="team" required>
+                <label for="team">Team</label>
+                <input type="radio" id="individual" name="ToI" value="individual"> 
+                <label for="individual">Individual</label>
+            </fieldset>    
             <label for="rating">Approximate Online Chess Rating (chess.com/lichess):</label>
             <input type="number" id="rating" name="rating"> 
     
@@ -43,18 +75,15 @@
     
                 <div id="bye-round-options" style="display:none;"> 
                     <p>Select the round you would like the bye:</p>
-                    <label for="bye-round-1"><input type="radio" id="bye-round-1" name="bye-round" value="1"> Round 1</label>
+                    <label for="bye-round-1"><input type="radio" id="bye-round-1" name="bye-round" value="1" checked required> Round 1</label>
                     <label for="bye-round-2"><input type="radio" id="bye-round-2" name="bye-round" value="2"> Round 2</label>
                     <label for="bye-round-3"><input type="radio" id="bye-round-3" name="bye-round" value="3"> Round 3</label>
                     <label for="bye-round-4"><input type="radio" id="bye-round-4" name="bye-round" value="3"> Round 4</label>
                     </div>
            </fieldset>
-    
+           
             <button type="submit">Register</button>
         </form>
     </section>
-    
-    
-    <script src="register-ui.js"></script>
 </body>
 </html>

@@ -1,14 +1,5 @@
 import { GetCredentials, PostCredentials } from "./signup-svc.js";
 
-
-export async function LogCredentials() {
-    var CredentialArray = await GetCredentials(); // Log Credentials to confirm persistance
-
-    CredentialArray.forEach( (UserCreds) => {
-        console.log(UserCreds);
-    })
-}
-
 export function RegisterUser(){
     const signupForm = document.getElementById('signup-form');
     signupForm.addEventListener('submit', async (event) => {
@@ -35,7 +26,7 @@ export function RegisterUser(){
         if (isValid) {
              await PostCredentials(email, password);
              //alert("Successfully Created Your Account!");
-             window.location.href = 'http://127.0.0.1:5501?showLogin=true'; // Redirect to Login modal with query param
+             window.location.href = './?showLogin=true'; // Redirect to Login modal with query param
         }
     });
 
@@ -43,13 +34,9 @@ export function RegisterUser(){
 
 async function CheckEmailExists(email) {
     const CredentialArray = await GetCredentials();
-    if (CredentialArray = null){
-        console.log("heres the array: " ,CredentialArray);
-        return false;
-    }
     return CredentialArray.some(userCreds => userCreds.email === email);
 }
 
-LogCredentials();
+
 
 RegisterUser();
